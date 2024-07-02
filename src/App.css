@@ -1,0 +1,194 @@
+:root {
+  font-size: 62.5%;
+  --pickled-bluewood-50: #f5f7fa;
+  --pickled-bluewood-100: #eaeef4;
+  --pickled-bluewood-200: #d1dae6;
+  --pickled-bluewood-300: #a9bcd0;
+  --pickled-bluewood-400: #7a97b6;
+  --pickled-bluewood-500: #59799e;
+  --pickled-bluewood-600: #466183;
+  --pickled-bluewood-700: #394e6b;
+  --pickled-bluewood-800: #324359;
+  --pickled-bluewood-900: #2e3b4c;
+  --pickled-bluewood-950: #1e2633;
+  --chilean-fire-400: #ffaa36;
+  --chilean-fire-600: #f27405;
+}
+
+button {
+  border: none;
+  border-radius: 5rem;
+  width: 100%;
+  height: 5rem;
+  font-size: 2rem;
+  font-weight: bolder;
+  color: var(--pickled-bluewood-100);
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.light-color {
+  background-color: var(--pickled-bluewood-300);
+}
+
+.light-color:active {
+  background-color: var(--pickled-bluewood-200);
+}
+
+.other-color {
+  background-color: var(--chilean-fire-600);
+}
+
+.other-color:active {
+  background-color: var(--chilean-fire-400);
+}
+
+.normal-color {
+  background-color: var(--pickled-bluewood-500);
+}
+
+.normal-color:active {
+  background-color: var(--pickled-bluewood-400);
+}
+
+#calculator {
+  display: grid;
+  grid-template-areas: 
+    "display display display display"
+    "clear negative percentage divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero decimal equals";
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  gap: 2rem;
+  justify-items: center;
+  padding: 3rem;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  background-color: var(--pickled-bluewood-800);
+}
+
+#answer {
+  font-size: 4.8rem;
+  height: 4.8rem;
+  margin-bottom: 1rem;
+}
+
+#expression {
+  font-size: 3rem;
+  height: 3rem;
+}
+
+#display {
+  grid-area: display;
+  background-color: var(--pickled-bluewood-900);
+  width: 100%;
+  height: 10rem;
+  border-radius: 2rem;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#negative {
+  grid-area: negative;
+}
+
+#percentage {
+  grid-area: percentage;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#seven {
+  grid-area: seven;
+}
+
+#eight {
+  grid-area: eight;
+}
+
+#nine {
+  grid-area: nine;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#four {
+  grid-area: four;
+}
+
+#five {
+  grid-area: five;
+}
+
+#six {
+  grid-area: six;
+}
+
+#add {
+  grid-area: add;
+}
+
+#one {
+  grid-area: one;
+}
+
+#two {
+  grid-area: two;
+}
+
+#three {
+  grid-area: three;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo p {
+  font-size: 1.5rem;
+}
+
+#logo img {
+  width: 6rem;
+  height: 6rem;
+  margin-left: 1rem;
+} 
